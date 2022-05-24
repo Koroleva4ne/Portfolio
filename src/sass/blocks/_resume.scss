@@ -1,0 +1,123 @@
+.resume {
+    padding-top: 126px;
+    @media (max-width: 992px) {
+        padding-top: 96px;
+    }
+    @media (max-width: 768px) {
+        padding-top: 46px;
+    }
+    &__wrapper {
+        padding: 60px 0 0 72px;
+        display: grid;
+        grid-template-columns: repeat(2, 417px);
+        column-gap: 143px;
+        @media (max-width: 1200px) {
+            padding: 40px 0 0 5px;
+            column-gap: 121px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 330px);
+            column-gap: 55px;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 43px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 50%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 8px);
+                    left: 0;
+                    top: -8px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 43px;
+            height: 1px;
+            top: 63px;
+            background-color: #000;
+        }
+        @media (max-width: 576px) {
+            &_t28 {
+                &::before {
+                    top: 28px;
+                }
+            }
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 99px;
+            @media (max-width: 576px) {
+                &_pt10 {
+                    padding-top: 10px;
+                }
+            }
+        }
+        &-body {
+            padding: 12px 0 0 43px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+            @media (max-width: 576px) {
+                padding-top: 10px;
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 45px;
+            left: 43px;
+            @media (max-width: 576px) {
+                &_t10 {
+                    top: 10px;
+                }
+            }
+            @include before-circle;
+            &::before {
+                top: 0;
+            }
+            img {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+        &-location {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+}
