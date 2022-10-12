@@ -43,12 +43,6 @@ gulp.task('html', function () {
         .pipe(gulp.dest("dist/"));
 });
 
-gulp.task('scripts', function () {
-    return gulp.src("src/js/**/*.js")
-        .pipe(gulp.dest("dist/js"))
-        .pipe(browserSync.stream());
-});
-
 gulp.task('fonts', function () {
     return gulp.src("src/fonts/**/*")
         .pipe(gulp.dest("dist/fonts"))

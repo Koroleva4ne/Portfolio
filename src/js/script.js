@@ -1,18 +1,12 @@
-const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      close = document.querySelector('.menu__close');
+import menu from './modules/menu';
 
-hamburger.addEventListener('click', () => {
-    menu. classList.add('active');
-});
+window.addEventListener('DOMContentLoaded', () => {
+    menu('.menu');
 
-close.addEventListener('click', () => {
-    menu. classList.remove('active');
-});
-
-const percents = document.querySelectorAll('.skills__progress-percent'),
-      scales = document.querySelectorAll('.skills__progress-scale span');
-
-percents.forEach( (item, i) => {
-    scales[i].style.width = item.innerHTML;
+    const percents = document.querySelectorAll('.skills__progress-percent'),
+          scales = document.querySelectorAll('.skills__progress-scale span');
+    
+    percents.forEach( (item, i) => {
+        scales[i].style.width = item.innerHTML;
+    });
 });

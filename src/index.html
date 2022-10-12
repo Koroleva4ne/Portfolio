@@ -57,12 +57,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -97,8 +97,8 @@
             <div class="title title_fz16 promo__subtitle">Меня зовут Александра Смит</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик <br>из города Москва</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#about" class="promo__link">Про меня</a>
             </div>
         </div>
     </section>
@@ -109,7 +109,7 @@
                     <img src="img/main_photo.jpg" alt="main_photo">
                 </div>
                 <div class="about__descr">
-                    <h2 class="title title_fz16 about__title">Про меня</h2>
+                    <h2 id="about" class="title title_fz16 about__title">Про меня</h2>
                     <div class="title about__subtitle">Меня зовут Александра</div>
                     <div class="divider"></div>
                     <div class="about__text">
@@ -156,7 +156,7 @@
     </section>
     <section class="resume">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Опыт</h2>
+            <h2 id="resume" class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title__section-subtitle">Чем я буду полезна</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
@@ -231,7 +231,7 @@
     </section>
     <section class="skills">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Навыки</h2>
+            <h2 id="skills" class="title title_fz16 title__section-title">Навыки</h2>
             <div class="title title__section-subtitle">Что я использую в работе</div>
             <div class="divider"></div>
             <div class="skills__wrapper">
@@ -349,7 +349,7 @@
     </section>
     <section class="portfolio">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+            <h2 id="portfolio" class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title__section-subtitle">Мои работы</div>
             <div class="divider"></div>
             <div class="portfolio__wrapper">
@@ -376,7 +376,7 @@
     </section>
     <section class="price">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
+            <h2 id="price" class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
             <div class="price__wrapper">
                 <div class="price__item">
@@ -419,7 +419,7 @@
                     <img src="img/main_photo.jpg" alt="main_photo">
                 </div>
                 <div class="contacts__descr">
-                    <h2 class="title title_fz16 contacts__title">Контакты</h2>
+                    <h2 id="contacts" class="title title_fz16 contacts__title">Контакты</h2>
                     <div class="title contacts__subtitle">Свяжитесь со мной</div>
                     <div class="divider"></div>
                     <div class="title title_fz14 contacts__text">
@@ -467,6 +467,6 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="../dist/js/bundle.js"></script>
 </body>
 </html>
